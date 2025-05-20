@@ -44,8 +44,6 @@ export default function RegisterPage() {
 
       onRegister(response.data, response.data.token);
       
-      // Redirect to dashboard
-      navigate('/dashboard');
     } catch (error) {
       setError(error.response?.data?.message || 'Registration failed');
     } finally {
